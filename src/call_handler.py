@@ -198,6 +198,7 @@ class CallHanlder:
         del self.callerConversations[request.values['CallSid']]
         return Response(str(twiml), content_type='application/xml', status=200)
 
+    # WIP
     def sendSMS(self, request: Request) -> Response:
         '''
         Sends a text message confirming doctor's appointment

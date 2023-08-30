@@ -32,6 +32,7 @@ def transcribe():
 def end_call():
     return callHandler.endCall(request)
 
+# WIP
 @app.route('/send-sms', methods=['POST', 'GET'])
 def send_sms():
     return callHandler.sendSMS(request)
